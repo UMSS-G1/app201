@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { Login } from '../login/login';
+//import { Login } from '../login/login';
 
 import { Person } from './person.model';
 
@@ -56,10 +56,7 @@ export class HomePage {
     
   }
 
-  goToPage(){
-    this.navCtrl.push( Login );
-  }
-
+  
   showAlert(){
     alert('Hoooooooola');
   }
