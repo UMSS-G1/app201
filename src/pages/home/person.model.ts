@@ -1,16 +1,14 @@
 export class Person {
 
-  private name: string;
-  private age: number;
   private nickname: any;
   private numbers: number[] = [];
-  public isSingle: boolean;
 
-  constructor (name: string, age: number, isSingle: boolean = false) {
-    this.name = name;
-    this.age = age;
+  constructor (
+    private name: string,
+    private age: number,
+    public isSingle: boolean = false
+  ) {
     this.numbers.push(1);
-    this.isSingle = isSingle;
   }
 
   setName(newName: string): void{
