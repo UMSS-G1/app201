@@ -13,6 +13,7 @@ export class HomePage {
 
   twitter: string = '@nicobytes';
   persons: Person[] = [];
+  newPerson: any = {};
 
   constructor(public navCtrl: NavController) {
     let person1 = new Person('nicolas', 23);
@@ -24,6 +25,7 @@ export class HomePage {
     person1.setName('nicbytes');
     console.log('despues', person1.getName() );
     console.log('despues', person1.getName() );
+
 
     this.persons.push(person1);
     this.persons.push(person2);
@@ -64,6 +66,15 @@ export class HomePage {
 
   updateTwitter( event ){
     this.twitter = event.target.value;
+  }
+
+  addPerson( person ){
+    this.persons.unshift(new Person(person.name, person.age));
+    this.newPerson = {};
+  }
+
+  removePerson(){
+    this.persons.splice(0,1);
   }
 
 }

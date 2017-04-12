@@ -25,7 +25,14 @@
   <hr/>
 
   <h1>Persons</h1>
+
+  <input type="text" [(ngModel)]="newPerson.name" placeholder="tu nombre">
+  <input type="number" [(ngModel)]="newPerson.age" placeholder="tu edad">
+  <button ion-button (click)="addPerson( newPerson )">add</button>
+  <button ion-button (click)="removePerson()">remove</button>
+
   <ul>
+    <li *ngIf="persons.length == 0">La lista esta vacia</li>
     <li *ngFor="let person of persons">
       {{ person.name }} - {{ person.age }}
       <span *ngIf="!person.isSingle">es feliz</span>

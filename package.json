@@ -35,5 +35,25 @@
     "@ionic/cli-build-ionic-angular": "0.0.4"
   },
   "version": "0.0.1",
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordovaPlugins": [
+    "ionic-plugin-keyboard",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen"
+  ],
+  "cordovaPlatforms": [
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    },
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ]
 }
