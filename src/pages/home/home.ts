@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 //import { Login } from '../login/login';
 
 import { Person } from './person.model';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -72,6 +73,10 @@ export class HomePage {
 
   removePerson(){
     this.persons.splice(0,1);
+  }
+
+  goToLoginPage(){
+    this.navCtrl.push( 'LoginPage' );
   }
 
 }
