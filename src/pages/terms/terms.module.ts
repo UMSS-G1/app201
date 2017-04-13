@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { TermsPage } from './terms';
-import { RockbandModule } from '../../components/rockband/rockband.module';
+import { SharedModule } from '../../components/shared.module';
 
 @NgModule({
   declarations: [
@@ -9,7 +9,7 @@ import { RockbandModule } from '../../components/rockband/rockband.module';
   ],
   imports: [
     IonicPageModule.forChild(TermsPage),
-    RockbandModule
+    SharedModule
   ],
   exports: [
     TermsPage

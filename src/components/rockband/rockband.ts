@@ -9,8 +9,10 @@ export class RockbandComponent {
 
   @Input() rockband: any = {};
 
-  constructor() {
-    
+  constructor() {}
+
+  showAlert(){
+    alert('Hola ' + this.rockband.title);
   }
 
 }
