@@ -8,6 +8,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
+  today = new Date();
+
   rockbands: any[] = [
     {
       title: 'Los prisioneros xxx',
