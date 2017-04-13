@@ -14,5 +14,6 @@
 
 
 <ion-content padding>
+  <ums-rockband *ngFor="let rockband of rockbands" [rockband]="rockband"></ums-rockband>
   <button ion-button (click)="goToRegisterPage()">ir a register</button>
 </ion-content>
