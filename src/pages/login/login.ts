@@ -15,4 +15,8 @@ export class LoginPage {
     console.log('ionViewDidLoad Login');
   }
 
+  goToRegisterPage(){
+    this.navCtrl.push( 'RegisterPage' );
+  }
+
 }
