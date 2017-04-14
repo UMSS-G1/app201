@@ -21,4 +21,8 @@ export class TermsPage {
     console.log('ionViewDidLoad Terms');
   }
 
+  goToHomePage(){
+    this.navCtrl.setRoot('HomePage');
+  }
+
 }

@@ -29,4 +29,8 @@ export class LoginPage {
     this.navCtrl.push( 'RegisterPage' );
   }
 
+  goToBack(){
+    this.navCtrl.pop();
+  }
+
 }

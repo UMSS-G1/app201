@@ -21,4 +21,5 @@
   <h1>{{ today | date:'dd/MMMM/y' | reverse }}</h1>
   <ums-rockband *ngFor="let rockband of rockbands" [rockband]="rockband"></ums-rockband>
   <button ion-button (click)="goToRegisterPage()">ir a register</button>
+  <button ion-button (click)="goToBack()" color="danger">ATRAS</button>
 </ion-content>

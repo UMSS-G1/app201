@@ -25,4 +25,9 @@ export class RegisterPage {
     this.navCtrl.push( 'TermsPage' );
   }
 
+  goToBack(){
+    this.navCtrl.pop();
+    this.navCtrl.canGoBack()
+  }
+
 }
