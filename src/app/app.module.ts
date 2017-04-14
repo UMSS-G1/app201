@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 
+import { RockbandService } from '../providers/rockband-service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,6 +23,7 @@ import { MyApp } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    RockbandService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
